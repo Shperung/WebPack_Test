@@ -15,13 +15,24 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <script type="text/javascript" src="js/script.js"></script>	
+
 </head>	
 
 <body >
- test
+ Стартовая конфигурация
+
+ <pre>
+   module.exports = {
+    entry: "./js/script.js",
+    output: {
+        filename: "build.js"
+    }
+  };
+ </pre> 
 
 </body>
+  <script type="text/javascript" src="build.js"></script> 
+  
 </html>
 
 
