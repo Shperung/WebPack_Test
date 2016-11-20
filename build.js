@@ -42,9 +42,42 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	console.log("test script 1");
+
+	document.write(__webpack_require__(1));
+	//var s2 =(require('./script2'));
+	__webpack_require__(3);
+	__webpack_require__(4);
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+	module.exports = "Текст с content.js"
+
+/***/ },
+/* 2 */,
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = console.log("Script2");
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	function co(){ 
+	var el = document.querySelector("#text_test");
+	el.style.color = "#FF0000";
+	}
+	module.exports = co();
+
+
+
+
+
 
 /***/ }
 /******/ ]);

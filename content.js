@@ -1,0 +1,1 @@
+module.exports = "Текст с content.js"
