@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Shperung/WebPack_Test#readme",
   "dependencies": {
     "css-loader": "^0.26.0",
-    "extract-text-webpack-plugin": "^1.0.1"
+    "extract-text-webpack-plugin": "^1.0.1",
+    "less-loader": "^2.2.3"
   }
 }

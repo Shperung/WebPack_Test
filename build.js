@@ -50,8 +50,10 @@
 	var s2 =(__webpack_require__(2));
 
 	__webpack_require__(3);
-	__webpack_require__(4);    
-	 
+	__webpack_require__(4);  
+	__webpack_require__(8);    
+	__webpack_require__(10);   
+	__webpack_require__(12);   
 
 /***/ },
 /* 1 */
@@ -78,6 +80,29 @@
 
 /***/ },
 /* 4 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 9 */,
+/* 10 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 11 */,
+/* 12 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
