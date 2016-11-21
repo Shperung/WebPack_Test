@@ -1,0 +1,24 @@
+{
+  "devDependencies": {},
+  "name": "viktor",
+  "description": "s",
+  "version": "1.0.0",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shperung/WebPack_Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shperung/WebPack_Test/issues"
+  },
+  "homepage": "https://github.com/Shperung/WebPack_Test#readme",
+  "dependencies": {
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^1.0.1"
+  }
+}

@@ -4,5 +4,5 @@ document.write(require('./content'));
 var s2 =(require('./script2'));
 
 require('./script3');
-
+require('./main.css');    
  

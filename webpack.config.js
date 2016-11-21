@@ -1,3 +1,31 @@
+/*module.exports = {
+    entry: "./script.js",// точка входа
+
+    output: { 
+        filename: "build.js" // собраный файл 
+    },
+
+    //watch: true, 
+
+    watchOptions:{
+    	aggregateTimeout: 100 
+    },
+
+    module:{
+        loaders:[
+           {
+             test:/\.css$/,
+             loader:'style!css'  //inline
+           }
+        ]
+    }
+    
+};*/
+
+
+
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
     entry: "./script.js",// точка входа
 
@@ -5,15 +33,19 @@ module.exports = {
         filename: "build.js" // собраный файл 
     },
 
-    watch: true, //нонстопно вочить
+    //watch: true, 
 
     watchOptions:{
-    	aggregateTimeout: 100 // ускоряю сборку (по дефолту 300)
+        aggregateTimeout: 100 
     },
 
-     //для дебага в хроме
-    //devtool: "source-map"// (Для релиза) Показывает в каком файле функция
-    // devtool: "inline-source-map"// Показывает в каком файле функция + мапы записуются внутрь билда 
-     //devtool: "cheap-inline-module-source-map"// Показывает в каком файле функция + мапы записуются внутрь билда + без учета позиции внутри строки (билд чучуть менше)
-     devtool: "eval" // (Для этапа розработки )
+    module:{
+        loaders: [
+            { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") }
+        ]
+    },
+    plugins: [
+        new ExtractTextPlugin("build.css")
+    ]
+    
 };

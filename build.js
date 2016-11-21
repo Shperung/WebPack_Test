@@ -44,25 +44,43 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("console.log(\"test script 1\");\r\n\r\ndocument.write(__webpack_require__(1));\r\nvar s2 =(__webpack_require__(2));\r\n\r\n__webpack_require__(3);\r\n\r\n \n\n//////////////////\n// WEBPACK FOOTER\n// ./script.js\n// module id = 0\n// module chunks = 0\n//# sourceURL=webpack:///./script.js?");
+	console.log("test script 1");
+
+	document.write(__webpack_require__(1));
+	var s2 =(__webpack_require__(2));
+
+	__webpack_require__(3);
+	__webpack_require__(4);    
+	 
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	eval("module.exports = \"Текст с content.js\"\n\n//////////////////\n// WEBPACK FOOTER\n// ./content.js\n// module id = 1\n// module chunks = 0\n//# sourceURL=webpack:///./content.js?");
+	module.exports = "Текст с content.js"
 
 /***/ },
 /* 2 */
 /***/ function(module, exports) {
 
-	eval("module.exports = console.log(\"Script2\");\n\n//////////////////\n// WEBPACK FOOTER\n// ./script2.js\n// module id = 2\n// module chunks = 0\n//# sourceURL=webpack:///./script2.js?");
+	module.exports = console.log("Script2");
 
 /***/ },
 /* 3 */
 /***/ function(module, exports) {
 
-	eval("function co(){ \r\nvar el = document.querySelector(\"#text_test\");\r\n//debugger;\r\nel.style.color = \"#FF0000\";\r\n}\r\nmodule.exports = co(); \r\n\r\n\r\n\r\n\r\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./script3.js\n// module id = 3\n// module chunks = 0\n//# sourceURL=webpack:///./script3.js?");
+	function co(){ 
+	var el = document.querySelector("#text_test");
+	//debugger;
+	el.style.color = "#FF0000";
+	}
+	module.exports = co(); 
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
